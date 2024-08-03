@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "LithoSphere",
+  "name": "LithoSphere: Generate Lithophanes from 3D Scenes",
   "icons": [
     {
       "src": "%PUBLIC_URL%/favicon.ico",
