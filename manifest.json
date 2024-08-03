@@ -1,7 +1,6 @@
 {
   "short_name": "React App",
   "name": "Create React App Sample",
-  "homepage": "https://kirk-jgraham3.github.io/LithoSphere/",
   "icons": [
     {
       "src": "%PUBLIC_URL%/favicon.ico",
