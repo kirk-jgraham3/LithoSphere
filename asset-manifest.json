@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/LithoSphere/static/css/main.e108905b.css",
-    "main.js": "/LithoSphere/static/js/main.7dfa131c.js",
+    "main.css": "/LithoSphere/static/css/main.c3a12d00.css",
+    "main.js": "/LithoSphere/static/js/main.3fc1054c.js",
     "static/js/453.411348f0.chunk.js": "/LithoSphere/static/js/453.411348f0.chunk.js",
     "index.html": "/LithoSphere/index.html",
-    "main.e108905b.css.map": "/LithoSphere/static/css/main.e108905b.css.map",
-    "main.7dfa131c.js.map": "/LithoSphere/static/js/main.7dfa131c.js.map",
+    "main.c3a12d00.css.map": "/LithoSphere/static/css/main.c3a12d00.css.map",
+    "main.3fc1054c.js.map": "/LithoSphere/static/js/main.3fc1054c.js.map",
     "453.411348f0.chunk.js.map": "/LithoSphere/static/js/453.411348f0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e108905b.css",
-    "static/js/main.7dfa131c.js"
+    "static/css/main.c3a12d00.css",
+    "static/js/main.3fc1054c.js"
   ]
 }
