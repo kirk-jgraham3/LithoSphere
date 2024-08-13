@@ -1,5 +1,4 @@
-import React from 'react';
-import { useGLTF } from '@react-three/drei';
+import React, {useState, useRef} from 'react';
 
 const Model = ({gltf}) => {
     return <primitive object={gltf.scene} />;

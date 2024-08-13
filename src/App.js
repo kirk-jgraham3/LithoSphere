@@ -1,14 +1,18 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import { ChakraProvider, Heading } from '@chakra-ui/react'
 import './App.css';
 import FileUpload from './components/FileUpload';
 import SceneCanvas from './components/SceneCanvas';
 import Loader from './components/Loader';
+import MiniView from './components/MiniView';
+import { render } from '@react-three/fiber';
+import * as THREE from 'three';
 
 function App() {
   const [gltf, setGLTF] = useState(null);
   const [progress, setProgress] = useState({started: false, pc: 0});
   const [uploadmsg, setUploadMsg] = useState({success: false, msg: ""});
+  const [texture, setTexture] = useState(null);
 
   const handleFileUpload = (gltf) => {
     setGLTF(gltf);
@@ -24,6 +28,10 @@ function App() {
     console.log(msg);
   }
 
+  const handleTextureReady = (t) => {
+    setTexture(t);
+  };
+
   return (
     <ChakraProvider>
       <div className="app">
@@ -38,7 +46,10 @@ function App() {
       </div>
       <div className="canvas-container">
         { uploadmsg.success ? 
-          <SceneCanvas gltf={gltf}/>
+          <>
+            <SceneCanvas gltf={gltf} onTextureReady={handleTextureReady}/>
+            {texture && <MiniView texture={texture}/>}
+          </>
           : 
           <div>
             { progress.started && 
